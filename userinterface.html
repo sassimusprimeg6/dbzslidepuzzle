@@ -12,8 +12,10 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
+            background-image: url('planet_namek.jpg'); /* Path to your background image */ 
+            background-size: cover; /* Ensures the image covers the entire background */ 
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            background-attachment: fixed; /* Keeps the background fixed during scrolling
             text-align: center;
         }
         header {
@@ -74,7 +76,7 @@
             }
 
             createImagePieces() {
-                const imageUrl = 'images/puzzle.jpg'; // Path to your image
+                const imageUrl = 'dragon_ball2.jpg'; // Path to your image
                 for (let row = 0; row < this.size; row++) {
                     for (let col = 0; col < this.size; col++) {
                         const xPos = -(col * 100);
